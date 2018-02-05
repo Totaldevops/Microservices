@@ -15,7 +15,7 @@ pipeline {
         }
         stage ('Checkout') {
             steps {
-               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub', url: 'https://github.com/reddymh/SpringBootApp.git']]])
+               checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHub', url: 'https://github.com/Totaldevops/Microservices.git']]])
             }
         }
         stage ('Build') {
