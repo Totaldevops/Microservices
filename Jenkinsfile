@@ -25,7 +25,7 @@ pipeline {
         }
         stage ('Sonar'){
             steps{
-                sh 'mvn sonar:sonar -Dsonar.host.url=http://<${SONAR_HOST}:${SONAR_PORT} -Dsonar.login=${SONAR_USER_TOKEN_ID}'
+                sh 'mvn sonar:sonar -Dsonar.host.url=http://${SONAR_HOST}:${SONAR_PORT} -Dsonar.login=${SONAR_USER_TOKEN_ID}'
             }
             
         }
